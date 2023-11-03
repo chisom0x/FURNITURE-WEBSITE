@@ -28,13 +28,17 @@
   
 </head>
 <style>
+    main { 
+        width: 100%;
+    }
 
     table, th, td { 
         border-collapse: collapse;
-        padding: 1rem;
+        padding: 2rem;
+        text-align: center;
     }
     main .table { 
-        width: 82vw;
+       
         height: 90vh;
         background-color: rgb(5, 3, 3);
         backdrop-filter: blur(7px);
@@ -45,14 +49,12 @@
     .table_header { 
         width: 100%;
         height: 10%;
-        padding: .8rem 5rem ;
+        padding: .8rem .5rem;
     }
 
     .table_body { 
-        border: 2px solid black;
-        width: 50%;
+        width: 90%;
         max-height: calc(89% - .8rem);
-        background-color: rgba(250, 235, 215, 0.157);
         margin: .8rem auto;
         border-radius: .6rem;
         overflow: auto;
@@ -78,7 +80,7 @@
         position: sticky;
         top: 0;
         left: 0;
-        background-color: #d5d1de;
+        background-color: #d5d1dedd;
     }
     tbody tr:nth-child(even) { 
         background-color: #0000000b;
@@ -86,7 +88,16 @@
     tbody tr:hover { 
         background-color: #fff6;
     }
-</style>
+    @media (max-width: 1000px) {
+        td:not(:first-of-type) { 
+            min-width: 12.1rem; 
+        }
+        table, th, td { 
+
+        padding: .9rem;
+        }
+    }
+</style> 
 <body>
   
   <section data-bs-version="5.1" class="menu menu1 cid-tUu3xMcjL7" once="menu" id="menu01-1j">
@@ -334,15 +345,7 @@
 </section>
 
 <section data-bs-version="5.1" class="article11 cid-tUu73m9fVY" id="article11-1m">
-    
-
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10 flex ">
-                <!-- <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong>Meet the team.</strong></h3> -->
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mt-4 display-7">
-                    <!-- <ul>
+                     <!-- <ul>
                         <ul class="no-bullets">
                             <ul style="list-style-type: none; padding: 0;">
                         <li>ONYENANKIE KELVIN - Computer Science Education (220115063)</li>
@@ -356,123 +359,88 @@
                         <li>MERCY OTTAH-NELSON Computer Science Education (220115065)</li>
                         <li>AJASA TAIWO TUMININU Computer Science Education (220115016)</li>
                         
-                    </ul> -->
-                    <!-- <main class="table">
-                        <section class="table_header">
-                            <h1>Meet the team </h1>
-                        </section>
-                        <section class="tabel_body">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th> id </th>
-                                        <th> Name </th>
-                                        <th> Matric Number </th>
-                                        <th> Department </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td> 1 </td>
-                                        <td> ONYENANKIE KELVIN </td>
-                                        <td> 220115063 </td>
-                                        <td> Computer Science Education </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </section>
-                    </main> -->
-                </h4>
-            </div>
-        </div>
-        <main class="table align-itemes-center d-flex flex-column justify-content-center ">
-            <section class="table_header align-center">
-                <h1>Meet the team </h1>
-            </section>
-            <section class="table_body align-center ">
-                <table>
-                    <thead>
-                        <tr>
-                            <th> id </th>
-                            <th> Name </th>
-                            <th> Matric Number </th>
-                            <th> Department </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                        <tr>
-                            <td> 1 </td>
-                            <td> ONYENANKIE KELVIN </td>
-                            <td> 220115063 </td>
-                            <td> Computer Science Education </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-    </div>
+                    </ul>  -->
     
+    <main class="table ">
+        <section class="table_header align-center fs-1 ">
+            <h1 class="fw-bold ">Meet the team. </h1>
+        </section>
+        <section class="table_body ">
+            <table>
+                <thead>
+                    <tr>
+                        <th> id </th>
+                        <th> Name </th>
+                        <th> Matric Number </th>
+                        <th> Department </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> IGOCHE PRAISE OJOCHIDE </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> ONYENANKIE KELVIN </td>
+                        <td> 220115063 </td>
+                        <td> Computer Science Education </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
 </section>
 
